@@ -1,3 +1,137 @@
-body {
-  background-color: aqua;
+.page {
+  color: #757575;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* LOGO */
+.logo {
+  color: #000000;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.logo:hover {
+  color: #2196f3;
+}
+
+/* site-nav */
+
+.site-nav .link {
+  color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+/* address */
+
+.address .link {
+  color: #757575;
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: #2196f3;
+}
+
+/* HERO */
+
+.hero {
+  background-color: rgba(47, 48, 58, 80%);
+}
+.hero-title {
+  color: #ffffff;
+}
+
+/* section */
+
+.section-title {
+  color: #212121;
+}
+
+/* section feature */
+
+.feature .title {
+  color: #212121;
+}
+
+/* work */
+
+.work .text {
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 80%);
+}
+
+/* team */
+
+.team .name {
+  color: #212121;
+}
+
+.social-list .link {
+  color: #afb1b8;
+}
+
+.social-list .link:hover,
+.social-list .link:focus {
+  color: #2196f3;
+}
+
+/* footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer .address {
+  color: #ffffff;
+}
+
+.footer .link {
+  color: rgba(255, 255, 255, 60%);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: #2196f3;
+}
+
+.footer .title {
+  color: #ffffff;
+}
+
+.footer .text {
+  color: rgba(255, 255, 255, 40%);
+}
+
+.button {
+  color: rgba(255, 255, 255, 60%);
+  background-color: #2f303a;
+}
+
+.button.primary {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  color: #2f303a;
+}
+
+.button:hover,
+.button:focus {
+  color: #2196f3;
 }
