@@ -1,6 +1,16 @@
-.page {
-  color: #757575;
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
   background-color: #ffffff;
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -9,41 +19,58 @@ ul {
 
 /* LOGO */
 .logo {
-  color: #000000;
+  color: var(--title-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
 }
 
-.logo span {
-  color: #2196f3;
+.logo-web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
 }
 
 .logo:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* site-nav */
 
 .site-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* address */
 
 .address .link {
-  color: #757575;
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .address .link:hover,
 .address .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* HERO */
@@ -53,40 +80,75 @@ ul {
 }
 .hero-title {
   color: #ffffff;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* section */
 
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* section feature */
 
 .feature .title {
-  color: #212121;
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 /* work */
 
 .work .text {
-  color: #ffffff;
+  color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 80%);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* team */
 
 .team .name {
-  color: #212121;
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.occupation {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .social-list .link {
-  color: #afb1b8;
+  color: var(--primary-text-color);
 }
 
 .social-list .link:hover,
 .social-list .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* footer */
@@ -96,20 +158,33 @@ ul {
 }
 
 .footer .address {
-  color: #ffffff;
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .footer .link {
   color: rgba(255, 255, 255, 60%);
+
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .footer .link:hover,
 .footer .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .footer .title {
-  color: #ffffff;
+  color: var(--primary-white-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .footer .text {
@@ -122,16 +197,62 @@ ul {
 }
 
 .button.primary {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
 }
 
 .button.primary:hover,
 .button.primary:focus {
-  color: #2f303a;
+  color: var(--primary-text-color);
 }
 
 .button:hover,
 .button:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+
+.portfolio-button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.examples .link {
+  text-decoration: none;
+}
+
+.examples-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples .text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.examples .discription {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 1.5;
 }
